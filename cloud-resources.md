@@ -4,6 +4,8 @@ Description of cloud resources.
 # Table Of Contents
 - [kscout.io Domain](#kscoutio-domain)
   - [Managing DNS Records](#managing-dns-records)
+    - [Edit Existing DNS Records](#edit-existing-dns-records)
+	- [Create New DNS Records](#create-new-dns-records)
 - [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
 
@@ -19,14 +21,14 @@ First go to the DNS dashboard page:
 2. Select the kscout.io domain
 3. Navigate to the "DNS" tab in the top menu
 
-To edit an existing record:
+### Edit Existing DNS Records
 
 1. Find the record's row
 2. Click on the value
 3. Edit
 4. Hit enter
 
-To create a new record:
+### Create New DNS Records
 
 1. Direct your attention to the data entry boxes above the table of entries.
    They are arranged like so:
