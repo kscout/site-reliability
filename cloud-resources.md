@@ -7,6 +7,7 @@ Description of cloud resources.
     - [Edit Existing DNS Records](#edit-existing-dns-records)
 	- [Create New DNS Records](#create-new-dns-records)
 - [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster)
+  - [Permanent Cluster DNS Records](#permanent-cluster-dns-records)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
   - [Temporary Development Cluster DNS Records](#temporary-development-cluster-dns-records)
 
@@ -15,10 +16,12 @@ The DNS zone for kscout.io is managed via Cloudflare.
 
 ## Managing DNS Records
 This guide assumes you know DNS basics.  
-If you need to create DNS records which point to the temporary OpenShift 4.1 
-development cluster see the 
-[Temporary Development Cluster DNS Records documentation](#temporary-development-cluster-dns-records).
 
+If you need to manage DNS records which point to the permanent OpenShift 3.1
+cluster see the [Permanent Cluster DNS Records documentation](#permanent-cluster-dns-records).
+
+If you need to manage DNS records which point to the temporary OpenShift 4.1 
+development cluster see the [Temporary Development Cluster DNS Records documentation](#temporary-development-cluster-dns-records).
 
 First go to the DNS dashboard page:
 
@@ -51,6 +54,19 @@ First go to the DNS dashboard page:
 The Red Hat development cluster is used to host user facing services
 on kscout.io.  
 
+## Permanent Cluster DNS Records
+The permanent cluster can receive external traffic and direct it 
+to applications.  
+
+To do this these applications must have a `Route` resource.  
+DNS entries will direct traffic to this `Route` resource.
+
+DNS entries should have the value:
+
+```
+devtools-dev.ext.devshift.net
+```
+
 # Temporary OpenShift 4.1 Development Clusters
 Temporary 48 hour OpenShift 4.1 clusters are used for prototyping and usage of 
 OpenShift 4.1 exclusive features.
@@ -58,6 +74,10 @@ OpenShift 4.1 exclusive features.
 ## Temporary Development Cluster DNS Records
 The temporary cluster can receive external traffic and direct it 
 to applications.  
+
+**Please be aware that services hosted on this cluster may go down unexpectedly,
+host all core user facing services on 
+the [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-custer).**
 
 To do this these applications must have a `Route` resource.  
 DNS entries will direct traffic to this `Route` resource.
