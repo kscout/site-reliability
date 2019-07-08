@@ -9,6 +9,7 @@ Description of cloud resources.
 - [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster)
   - [Permanent Cluster DNS Records](#permanent-cluster-dns-records)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
+  - [Create A Development Cluster](#create-a-development-cluster)
   - [Temporary Development Cluster DNS Records](#temporary-development-cluster-dns-records)
 
 # kscout.io Domain
@@ -71,13 +72,20 @@ devtools-dev.ext.devshift.net
 Temporary 48 hour OpenShift 4.1 clusters are used for prototyping and usage of 
 OpenShift 4.1 exclusive features.
 
+## Create A Development Cluster
+Development clusters are managed by the [Auto Cluster tool](https://github.com/kscout/auto-cluster).  
+
+The tool is currently running on the  [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster).  
+This ensures that a development cluster is always running.  
+
+You should never have to create a development cluster manually.
+
 ## Temporary Development Cluster DNS Records
+**Please be aware that services hosted on this cluster may go down unexpectedly,
+host all core user facing services on the [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster).**
+
 The temporary cluster can receive external traffic and direct it 
 to applications.  
-
-**Please be aware that services hosted on this cluster may go down unexpectedly,
-host all core user facing services on 
-the [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-custer).**
 
 To do this these applications must have a `Route` resource.  
 DNS entries will direct traffic to this `Route` resource.
