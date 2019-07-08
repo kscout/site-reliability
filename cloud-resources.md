@@ -8,6 +8,7 @@ Description of cloud resources.
 	- [Create New DNS Records](#create-new-dns-records)
 - [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
+  - [Temporary Development Cluster DNS Records](#temporary-development-cluster-dns-records)
 
 # kscout.io Domain
 The DNS zone for kscout.io is managed via Cloudflare.  
