@@ -14,6 +14,10 @@ The DNS zone for kscout.io is managed via Cloudflare.
 
 ## Managing DNS Records
 This guide assumes you know DNS basics.  
+If you need to create DNS records which point to the temporary OpenShift 4.1 
+development cluster see the 
+[Temporary Development Cluster DNS Records documentation](#temporary-development-cluster-dns-records).
+
 
 First go to the DNS dashboard page:
 
@@ -49,3 +53,23 @@ on kscout.io.
 # Temporary OpenShift 4.1 Development Clusters
 Temporary 48 hour OpenShift 4.1 clusters are used for prototyping and usage of 
 OpenShift 4.1 exclusive features.
+
+## Temporary Development Cluster DNS Records
+The temporary cluster can receive external traffic and direct it 
+to applications.  
+
+To do this these applications must have a `Route` resource.  
+DNS entries will direct traffic to this `Route` resource.
+
+DNS entries which point to this cluster must be of type `CNAME`. Their values 
+must follow the format:
+
+```
+<route host>.<route namespace>.apps.<cluster name>.devcluster.openshift.com
+```
+
+- `<route host>` is the `spec.host` field of your `Route` resource
+- `<route namespace>` is the `metadata.namespace` field of your 
+  `Route` resource
+- `<cluster name>` is the name of the temporary development cluster, find this
+  the Slack channel
