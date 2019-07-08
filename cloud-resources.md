@@ -7,6 +7,7 @@ Description of cloud resources.
     - [Edit Existing DNS Records](#edit-existing-dns-records)
 	- [Create New DNS Records](#create-new-dns-records)
 - [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster)
+  - [Setup Permanent Cluster](#setup-permanent-cluster)
   - [Permanent Cluster DNS Records](#permanent-cluster-dns-records)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
   - [Create A Development Cluster](#create-a-development-cluster)
@@ -54,6 +55,25 @@ First go to the DNS dashboard page:
 # Permanent OpenShift 3.1 Cluster
 The Red Hat development cluster is used to host user facing services
 on kscout.io.  
+
+## Setup Permanent Cluster
+The following steps were completed to setup the permanent cluster:
+
+1. Create `kscout` project, use for following steps
+2. Add members of KScout GitHub organization to the project
+3. Deploy the website: [instructions](https://github.com/kscout/kscout.io#deployment)
+4. Deploy the serverless registry API: [instructions](https://github.com/kscout/serverless-registry-api#deployment)
+5. Deploy the chat bot API: [instructions](https://github.com/kscout/chat-bot-api#deployment)
+6. Deploy the Slack chat bot API: [instructions](https://github.com/kscout/slack-chat-bot-api#deployment)
+7. Deploy cluster observability stack: [instructions](https://github.com/kscout/cluster-observability/#deploy)
+
+Finally ensure that kscout.io is pointing to the permanent cluster for the 
+following subdomains:
+
+- www
+- api
+- bot-api
+- slack-bot-api
 
 ## Permanent Cluster DNS Records
 The permanent cluster can receive external traffic and direct it 
