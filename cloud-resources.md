@@ -6,7 +6,7 @@ Description of cloud resources.
   - [Managing DNS Records](#managing-dns-records)
     - [Edit Existing DNS Records](#edit-existing-dns-records)
 	- [Create New DNS Records](#create-new-dns-records)
-- [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster)
+- [Permanent OpenShift 3 Cluster](#permanent-openshift-3-cluster)
   - [Setup Permanent Cluster](#setup-permanent-cluster)
   - [Permanent Cluster DNS Records](#permanent-cluster-dns-records)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
@@ -19,7 +19,7 @@ The DNS zone for kscout.io is managed via Cloudflare.
 ## Managing DNS Records
 This guide assumes you know DNS basics.  
 
-If you need to manage DNS records which point to the permanent OpenShift 3.1
+If you need to manage DNS records which point to the permanent OpenShift 3
 cluster see the [Permanent Cluster DNS Records documentation](#permanent-cluster-dns-records).
 
 If you need to manage DNS records which point to the temporary OpenShift 4.1 
@@ -52,7 +52,7 @@ First go to the DNS dashboard page:
    on this gray cloud to enable Cloudflare.
 5. Hit the "Add Record" button
 
-# Permanent OpenShift 3.1 Cluster
+# Permanent OpenShift 3 Cluster
 The Red Hat development cluster is used to host user facing services
 on kscout.io.  
 
@@ -95,14 +95,14 @@ OpenShift 4.1 exclusive features.
 ## Create A Development Cluster
 Development clusters are managed by the [Auto Cluster tool](https://github.com/kscout/auto-cluster).  
 
-The tool is currently running on the  [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster).  
+The tool is currently running on the  [Permanent OpenShift 3 Cluster](#permanent-openshift-3-cluster).  
 This ensures that a development cluster is always running.  
 
 You should never have to create a development cluster manually.
 
 ## Temporary Development Cluster DNS Records
 **Please be aware that services hosted on this cluster may go down unexpectedly,
-host all core user facing services on the [Permanent OpenShift 3.1 Cluster](#permanent-openshift-31-cluster).**
+host all core user facing services on the [Permanent OpenShift 3 Cluster](#permanent-openshift-3-cluster).**
 
 The temporary cluster can receive external traffic and direct it 
 to applications.  
