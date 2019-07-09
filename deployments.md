@@ -37,7 +37,7 @@ The [HTTP Service Chart](https://github.com/kscout/http-service-chart) and
 [Mongo Chart](https://github.com/kscout/mongo-chart) implement both these 
 deployment types.  
 
-By using shared charts improvements made to one deployment are shared across 
+By using shared charts, improvements made to one deployment are shared across 
 all applications.
 
 ## Docker Tags
