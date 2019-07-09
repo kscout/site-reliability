@@ -37,7 +37,7 @@ Kubernetes cluster.
 
 - Ensure that the DNS entry for the downed service is correct. Reference the
   [Managing DNS Records
-  documentation](about/cloud-resources.md#managing-dns-records).
+  documentation](../about/cloud-resources.md#managing-dns-records).
 - Use `dig +short SUBDOMAIN.kscout.io` to check DNS records
 - Mock requests to DNS record values:
   ```
