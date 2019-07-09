@@ -13,5 +13,5 @@ Index:
 - [`about/`](about): General information describing existing infrastructure 
   and practices
 
-See [requesting access](communication.md#requesting-access) if you need access
+See [requesting access](about/communication.md#requesting-access) if you need access
 to any resources mentioned in this repository.
