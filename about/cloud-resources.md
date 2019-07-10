@@ -3,77 +3,17 @@ Description of cloud resources.
 
 # Table Of Contents
 - [kscout.io Domain](#kscoutio-domain)
-  - [Managing DNS Records](#managing-dns-records)
-    - [Edit Existing DNS Records](#edit-existing-dns-records)
-	- [Create New DNS Records](#create-new-dns-records)
 - [Permanent OpenShift 3 Cluster](#permanent-openshift-3-cluster)
-  - [Setup Permanent Cluster](#setup-permanent-cluster)
   - [Permanent Cluster DNS Records](#permanent-cluster-dns-records)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
-  - [Create A Development Cluster](#create-a-development-cluster)
   - [Temporary Development Cluster DNS Records](#temporary-development-cluster-dns-records)
 
 # kscout.io Domain
 The DNS zone for kscout.io is managed via Cloudflare.  
 
-## Managing DNS Records
-This guide assumes you know DNS basics.  
-
-If you need to manage DNS records which point to the permanent OpenShift 3
-cluster see the [Permanent Cluster DNS Records documentation](#permanent-cluster-dns-records).
-
-If you need to manage DNS records which point to the temporary OpenShift 4.1 
-development cluster see the [Temporary Development Cluster DNS Records documentation](#temporary-development-cluster-dns-records).
-
-First go to the DNS dashboard page:
-
-1. Log onto [dash.cloudflare.com](https://dash.cloudflare.com)
-2. Select the kscout.io domain
-3. Navigate to the "DNS" tab in the top menu
-
-### Edit Existing DNS Records
-
-1. Find the record's row
-2. Click on the value
-3. Edit
-4. Hit enter
-
-### Create New DNS Records
-
-1. Direct your attention to the data entry boxes above the table of entries.
-   They are arranged like so:
-   ```
-   | Type | Name | Value | TTL | Cloudflare Enabled? | Add Record Button |
-   ```
-2. Enter you record's type, name, and value
-3. Keep TTL set to "Automatic TTL"
-4. Ensure Cloudflare is enabled for the record, an orange cloud should display
-   if Cloudflare is enabled. If disabled a gray cloud will be displayed. Click
-   on this gray cloud to enable Cloudflare.
-5. Hit the "Add Record" button
-
 # Permanent OpenShift 3 Cluster
 The Red Hat development cluster is used to host user facing services
 on kscout.io.  
-
-## Setup Permanent Cluster
-The following steps were completed to setup the permanent cluster:
-
-1. Create `kscout` project, use for following steps
-2. Add members of KScout GitHub organization to the project
-3. Deploy the website: [instructions](https://github.com/kscout/kscout.io#deployment)
-4. Deploy the serverless registry API: [instructions](https://github.com/kscout/serverless-registry-api#deployment)
-5. Deploy the chat bot API: [instructions](https://github.com/kscout/chat-bot-api#deployment)
-6. Deploy the Slack chat bot API: [instructions](https://github.com/kscout/slack-chat-bot-api#deployment)
-7. Deploy cluster observability stack: [instructions](https://github.com/kscout/cluster-observability/#deploy)
-
-Finally ensure that kscout.io is pointing to the permanent cluster for the 
-following subdomains:
-
-- www
-- api
-- bot-api
-- slack-bot-api
 
 ## Permanent Cluster DNS Records
 The permanent cluster can receive external traffic and direct it 
@@ -91,14 +31,6 @@ devtools-dev.ext.devshift.net
 # Temporary OpenShift 4.1 Development Clusters
 Temporary 48 hour OpenShift 4.1 clusters are used for prototyping and usage of 
 OpenShift 4.1 exclusive features.
-
-## Create A Development Cluster
-Development clusters are managed by the [Auto Cluster tool](https://github.com/kscout/auto-cluster).  
-
-The tool is currently running on the  [Permanent OpenShift 3 Cluster](#permanent-openshift-3-cluster).  
-This ensures that a development cluster is always running.  
-
-You should never have to create a development cluster manually.
 
 ## Temporary Development Cluster DNS Records
 **Please be aware that services hosted on this cluster may go down unexpectedly,
