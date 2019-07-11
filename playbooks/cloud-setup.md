@@ -18,8 +18,9 @@ development cluster see the [Temporary Development Cluster DNS Records documenta
 First go to the DNS dashboard page:
 
 1. Log onto [dash.cloudflare.com](https://dash.cloudflare.com)
-2. Select the kscout.io domain
-3. Navigate to the "DNS" tab in the top menu
+2. Select the "KScout Red Hat Account"
+3. Select the kscout.io domain
+4. Navigate to the "DNS" tab in the top menu
 
 ## Edit Existing DNS Records
 
