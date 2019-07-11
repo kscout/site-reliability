@@ -1,4 +1,4 @@
-# Site Reliability Engineering
+# Site Reliability
 Site reliability engineering resources for the KScout project.
 
 # Table Of Contents
