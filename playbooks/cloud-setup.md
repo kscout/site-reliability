@@ -2,13 +2,26 @@
 First time setup instructions for cloud resources.
 
 # Table Of Contents
-- [Managing DNS Records](#managing-dns-records)
-  - [Edit Existing DNS Records](#edit-existing-dns-records)
-  - [Create New DNS Records](#create-new-dns-records)
+- [kscout.io Domain](#kscoutio-domain)
+  - [Setup Domain](#setup-domain)
+  - [Managing DNS Records](#managing-dns-records)
+	- [Edit Existing DNS Records](#edit-existing-dns-records)
+	- [Create New DNS Records](#create-new-dns-records)
 - [Setup Permanent OpenShift 3 Cluster](#setup-permanent-openshift-3-cluster)
 - [Create A Temporary Openshift 4.1 Development Cluster](#create-a-temporary-openshift-41-development-cluster)
 
-# Managing DNS Records
+# kscout.io Domain
+## Setup Domain
+
+1. Log onto [dash.cloudflare.com](https://dash.cloudflare.com)
+2. Click the "+ Add site" button in the upper right hand corner
+3. Enter "kscout.io" as the site name
+4. Complete prompts in new site wizard
+5. Go to the kscout.io domain overview dashboard
+6. Select the "Crypto" menu in the upper bar
+7. Turn the "Always Use HTTPS" option on
+
+## Managing DNS Records
 If you need to manage DNS records which point to the permanent OpenShift 3
 cluster see the [Permanent Cluster DNS Records documentation](../about/cloud-resources.md#permanent-cluster-dns-records).
 
@@ -22,14 +35,14 @@ First go to the DNS dashboard page:
 3. Select the kscout.io domain
 4. Navigate to the "DNS" tab in the top menu
 
-## Edit Existing DNS Records
+### Edit Existing DNS Records
 
 1. Find the record's row
 2. Click on the value
 3. Edit
 4. Hit enter
 
-## Create New DNS Records
+### Create New DNS Records
 
 1. Direct your attention to the data entry boxes above the table of entries.
    They are arranged like so:
