@@ -24,7 +24,9 @@ which PR links will be sent.
 > It is recommended this is a channel only maintainers are present, to reduce CI
 > bot like spam in general community channels. 
 
-Then run:
+Additionally the [`hub`](https://hub.github.com) tool must be installed.
+
+Run `update.sh`:
 
 ```
 % update.sh COMMON_HELM_CHART_NAME
