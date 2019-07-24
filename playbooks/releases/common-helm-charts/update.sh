@@ -92,7 +92,7 @@ fi
 
 case "$COMMON_CHART" in
     http-service)
-	dependent_repos=("chat-bot-api" "slack-chat-bot-api" "kscout.io" "serverless-registry-api")
+	dependent_repos=("chat-bot-api" "chat-bot-training-data" "slack-chat-bot-api" "kscout.io" "serverless-registry-api")
 	in_dependent_repo_path=deploy/charts/http
 	;;
     mongo)
