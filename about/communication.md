@@ -11,7 +11,7 @@ Development communication takes place in the
 the [KScout GitHub organization](https://github.com/kscout).  
 
 User facing communication takes place on kscout.io and on 
-the [status page](status-page.md).
+the status page.
 
 # Requesting Access
 To request access to any KScout related resources make a new issue in
