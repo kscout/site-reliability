@@ -3,6 +3,7 @@ Description of cloud resources.
 
 # Table Of Contents
 - [kscout.io Domain](#kscoutio-domain)
+- [Status Page](#status-page)
 - [Permanent OpenShift 3 Cluster](#permanent-openshift-3-cluster)
   - [Permanent Cluster DNS Records](#permanent-cluster-dns-records)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
@@ -10,6 +11,11 @@ Description of cloud resources.
 
 # kscout.io Domain
 The DNS zone for kscout.io is managed via Cloudflare.  
+
+# Status Page
+A status page is hosted at status.kscout.io.  
+
+This is a static site hosted by GitHub pages.
 
 # Permanent OpenShift 3 Cluster
 The Red Hat development cluster is used to host user facing services

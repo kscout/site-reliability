@@ -7,6 +7,7 @@ First time setup instructions for cloud resources.
   - [Managing DNS Records](#managing-dns-records)
 	- [Edit Existing DNS Records](#edit-existing-dns-records)
 	- [Create New DNS Records](#create-new-dns-records)
+- [Setup Status Page](#setup-status-page)	
 - [Setup Permanent OpenShift 3 Cluster](#setup-permanent-openshift-3-cluster)
 - [Create A Temporary Openshift 4.1 Development Cluster](#create-a-temporary-openshift-41-development-cluster)
 
@@ -55,6 +56,14 @@ First go to the DNS dashboard page:
    if Cloudflare is enabled. If disabled a gray cloud will be displayed. Click
    on this gray cloud to enable Cloudflare.
 5. Hit the "Add Record" button
+
+# Setup Status Page
+
+1. Point `status.kscout.io` at `kscout.github.io`
+2. Ensure  [status page repository](https://github.com/kscout/status-page) is
+   setup to serve GitHub pages out of the `docs/` directory
+3. Place a file named `docs/CNAME` who' contents are `status.kscout.io` in the
+   status page repository
 
 # Setup Permanent Openshift 3 Cluster
 The following steps were completed to setup the permanent cluster:
