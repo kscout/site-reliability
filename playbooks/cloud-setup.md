@@ -10,6 +10,8 @@ First time setup instructions for cloud resources.
 - [Setup Status Page](#setup-status-page)	
 - [Setup Permanent OpenShift 3 Cluster](#setup-permanent-openshift-3-cluster)
 - [Create A Temporary Openshift 4.1 Development Cluster](#create-a-temporary-openshift-41-development-cluster)
+- [Setup Slack Apps](#setup-slack-apps)
+  - [Ops Bot](#ops-bot)
 
 # kscout.io Domain
 ## Setup Domain
@@ -91,3 +93,9 @@ The tool is currently running on the  [Permanent OpenShift 3 Cluster](../about/c
 This ensures that a development cluster is always running.  
 
 You should never have to create a development cluster manually.
+
+# Setup Slack Apps
+## Ops Bot
+Create a new Slack App and add it to the workspace.  
+Create an incoming webhook for the #kscout-develop channel.  
+Use this in various app's configuration.

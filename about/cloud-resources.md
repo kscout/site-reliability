@@ -8,6 +8,8 @@ Description of cloud resources.
   - [Permanent Cluster DNS Records](#permanent-cluster-dns-records)
 - [Temporary OpenShift 4.1 Development Clusters](#temporary-openshift-41-development-clusters)
   - [Temporary Development Cluster DNS Records](#temporary-development-cluster-dns-records)
+- [Slack Apps](#slack-apps)
+  - [Ops Bot](#ops-bot)
 
 # kscout.io Domain
 The DNS zone for kscout.io is managed via Cloudflare.  
@@ -60,3 +62,8 @@ must follow the format:
   `Route` resource
 - `<cluster name>` is the name of the temporary development cluster, find this
   the Slack channel
+
+# Slack Apps
+## Ops Bot
+The "KScout Ops Bot" app is used by devops related infrastructure to post 
+messages to the #kscout-develop Slack channel. 
