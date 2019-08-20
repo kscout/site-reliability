@@ -101,6 +101,6 @@ Create an incoming webhook for the #kscout-develop channel.
 Use this in various app's configuration.
 
 ## KScout Bot
-Create a new Slack App and add it to the workspace
-Create app-mention event
-Clone the repo and follow the steps in [Slack Client](https://github.com/kscout/slack-chat-bot-api)
+Create a new Slack App and add it to the workspace.
+Create app-mention event.
+Clone the repo and follow the steps in [Slack Client](https://github.com/kscout/slack-chat-bot-api).
