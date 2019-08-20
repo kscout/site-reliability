@@ -67,3 +67,9 @@ must follow the format:
 ## Ops Bot
 The "KScout Ops Bot" app is used by devops related infrastructure to post 
 messages to the #kscout-develop Slack channel. 
+
+## KScout bot
+
+The "scoutbot" app acts as a client for the chatbot api of KScout Platform. Users can learn about serverless, search 
+and deploy apps using this bot. The bot answers only when mentioned(@scoutbot) on any channel of CoreOS workspace.
+
