@@ -4,6 +4,7 @@ Team communication.
 # Table Of Contents
 - [Overview](#overview)
 - [Requesting Access](#requesting-access)
+- [Slack Channels](#slack-channels)
 
 # Overview
 Development communication takes place in the 
@@ -18,3 +19,14 @@ To request access to any KScout related resources make a new issue in
 this repository.  
 
 Use the "Access Request" issue template.
+
+# Slack Channels
+## General Communication
+General communication should go in the #kscout channel.
+
+This involves stand up, product updates, meeting reminders, ect.
+
+## Development Communication
+For communication only related to development use the #kscout-develop channel.
+
+This involves technical conversations, bot messages, ect.
